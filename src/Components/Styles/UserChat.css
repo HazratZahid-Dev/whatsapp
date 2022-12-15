@@ -1,0 +1,31 @@
+.userchat__container {
+  z-index: 100;
+  width: 100%;
+margin-bottom: px;  
+  /* height: 100vh; */
+  @apply cursor-pointer  flex justify-between px-5 ;
+}
+.image__container {
+  @apply flex items-center h-16 w-16 rounded-full overflow-hidden;
+}
+.image__container img {
+  border-radius: 50%;
+  
+  @apply h-14 w-16 ;
+}
+.chats__wrapper {
+  @apply flex justify-between mx-5 w-full border-b border-gray-200 pb-4;
+}
+.user__name {
+  /* @apply  font-bold; */
+}
+.user__message {
+  @apply text-gray-500 text-sm;
+}
+
+.time__container p {
+  @apply text-gray-500;
+}
+.userchat__container:hover{
+  @apply bg-gray-200
+}

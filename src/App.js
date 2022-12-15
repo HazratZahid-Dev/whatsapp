@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+// import WhatsNav from '../src/Pages/WhastNav';
+// import Chats from '../src/Pages/Chats'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import Nav from '../src/Pages/Navbar'
+import ChatsDetail from '../src/Pages/ChatsDetails'
+import Chats  from '../src/Pages/Chats'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   
+     <Router>
+      <div>
+      <Nav/>
+       
+        <Routes>
+          
+          <Route path='/' element={<Chats  />} />
+          <Route path='/Status' element={<ChatsDetail/>} /> 
+           {/* <Route path='/' element={<Chats  />} />
+          <Route path='/Status' element={<ChatsDetail/>} />
+          <Route path='/' element={<Chats  />} />
+          <Route path='/Status' element={<ChatsDetail/>} /> 
+           <Route path='/Calls' element={<Calls/>} /> 
+           <Route path='/UserMessage' element={<UserMessage/>} /> */}
+
+        </Routes>
+      </div>
+    </Router>
+   
+    
+   
+    </>
   );
 }
 

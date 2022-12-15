@@ -1,0 +1,18 @@
+.top__container {
+  width: 100%;
+  z-index: 100;
+  @apply  overflow-hidden h-20  bg-gray-100 flex justify-between px-8 items-center;
+}
+
+.topnavbar__details {
+  @apply flex items-center gap-5;
+}
+.topnavbar__details img {
+  @apply h-14 w-14 rounded-full;
+}
+
+/* Icons */
+
+.topnavbar__icons {
+  @apply flex items-center gap-5 text-xl text-blue-600;
+}

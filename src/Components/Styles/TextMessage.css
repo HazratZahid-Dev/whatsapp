@@ -1,0 +1,3 @@
+.textmessage {
+  @apply text-black bg-green-200 mt-10 py-1 px-2 rounded-md;
+}

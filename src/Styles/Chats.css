@@ -1,0 +1,25 @@
+.chats__container {
+  @apply grid grid-cols-7  overflow-hidden;
+}
+.chats__userchats {
+  height: 100vh;
+  /* box-shadow: 0 0 12px 2px; */
+  /* border-4 rounded-md border-blue-300; */
+  @apply col-span-2  overflow-y-scroll relative;
+}
+.chats__chatsdetails {
+  height: 80vh;
+  @apply col-span-5  overflow-y-scroll;
+}
+
+@media (max-width: 1000px) {
+  .chats__container {
+    @apply flex flex-wrap ;
+  }
+  .chats__userchats {
+    @apply w-screen;
+  }
+  .chats__chatsdetails {
+    @apply w-screen;
+  }
+}

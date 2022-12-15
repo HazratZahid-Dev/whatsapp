@@ -1,0 +1,22 @@
+.navbar {
+  z-index: 100;
+  /* margin-top: 90px; */
+  /* margin-top: -100px; */
+  /* top: 80%; */
+  @apply w-full flex justify-between bg-gray-100 text-gray-400  sticky right-0 left-0 overflow-hidden;
+}
+.navbar a {
+  @apply flex flex-col justify-center items-center hover:text-blue-600  hover:bg-gray-500 p-2 rounded-md transition-all duration-300;
+}
+.navbar span {
+  /* @apply text-3xl; */
+}
+
+/* @media (max-width: 700px) {
+  .navbar span {
+    @apply text-xl;
+  }
+  .navbar a {
+    @apply p-1;
+  }
+} */
